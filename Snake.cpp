@@ -1,7 +1,7 @@
 #include "Snake.h"
 #include<iostream>
 #include <cmath>
-
+#include <iomanip>
 
 uint32_t rnd(uint32_t min, uint32_t max) {
 	std::random_device rd;
@@ -64,7 +64,7 @@ void SnakeBoard::display() {
 
 	for (size_t ih = 0; ih < h; ih++)
 	{
-		std::cout << " "<<ih<<" ";
+		std::cout  << " "<<ih<<" ";
 		for (size_t iw = 0; iw < w; iw++)
 		{
 			std::cout << "[" << symbol[boardView[iw][ih]] << "]";
